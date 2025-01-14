@@ -2,8 +2,9 @@
 maplists
 =====
 
-An OTP library which implements the `lists:(u)key...` functons but for lists of maps.
+An OTP library which implements the `lists:(u)key...` functions but for lists of maps.
 Instead of comparing values of the Nth element of tuples these functions compare values associated with the given key in maps.
+
 Some minor difference in semantics:
 
 - whenever a function in the `lists` module has `(Key, N...)` in its parameters, the similar function in this library has (Key, Value, ...) where `Key` is the name of the key to look up and `Value` is the value to compare with, so they kind of changed places for readability.
